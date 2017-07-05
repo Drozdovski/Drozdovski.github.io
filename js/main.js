@@ -162,9 +162,9 @@ jQuery(document).ready(function($) {
 
   //close-message
 
-  $('.close-mes').click(function() {
+  $('.central-message-right > .close-mes').click(function() {
     if (confirm('Dude, do not hurry! R u serious?')) {
-      $(this).closest('.message').remove();
+      $(this).closest('.central-message').remove();
     } else {
       return false;
     }
