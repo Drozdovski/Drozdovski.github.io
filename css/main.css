@@ -869,10 +869,6 @@ body {
 
 
 @media only screen and (max-width : 1317px) {
-  #send-message {
-    margin-top: 10px;
-    margin-left: 10px;
-  }
 
   .dropdown-right > .select-type > .dropdown > .btn-block-right {
     padding: 6px 2px;
@@ -899,6 +895,13 @@ body {
     width: auto;
   }
 
+}
+
+@media only screen and (max-width : 1248px) {
+  #send-message {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width : 1228px) {
@@ -948,7 +951,7 @@ body {
 
 }
 
-@media only screen and (max-width : 1038px) {
+@media only screen and (max-width : 968px) {
   .mid-header-body > .input-group {
     margin-top: 10px;
   }
