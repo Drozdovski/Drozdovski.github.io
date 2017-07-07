@@ -1,0 +1,143 @@
+jQuery(document).ready ($) ->
+  $('.messages-right > .central-message:eq(2) > .photo-div').hover (->
+    $('.invis-position').css 'display': 'block'
+    return
+  ), ->
+    $('.invis-position').hover (->
+    ), ->
+      $(this).css 'display': 'none'
+      return
+    return
+  #my marketplace search
+  $('.live-search-list > .search-item').each ->
+    $(this).attr 'data-search-term', $(this).text().toLowerCase()
+    return
+  $('.live-search-box').on 'keyup', ->
+    searchTerm = $(this).val().toLowerCase()
+    $('.live-search-list > .search-item').each ->
+      if $(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 or searchTerm.length < 1
+        $(this).show()
+      else
+        $(this).hide()
+      return
+    return
+  #my marketplace sort's
+  #1
+  $('.dropdown-right > .select-type > .dropdown > .dropdown-menu > li > a').filter(->
+    aVal = @text
+    if aVal == 'Seller'
+      return true
+    return
+  ).click ->
+    aVal = @text
+    $('.dropdown-right > .select-type > .dropdown > #dropdownMenu5 > .drop-btn-block').text aVal
+    $('.messages-right > .central-message').hide()
+    $('.messages-right > .central-message:has(.seller)').show()
+    return
+  $('.dropdown-right > .select-type > .dropdown > .dropdown-menu > li > a').filter(->
+    aVal = @text
+    if aVal == 'Buyer'
+      return true
+    return
+  ).click ->
+    aVal = @text
+    $('.dropdown-right > .select-type > .dropdown > #dropdownMenu5 > .drop-btn-block').text aVal
+    $('.messages-right > .central-message').hide()
+    $('.messages-right > .central-message:has(.buyer)').show()
+    return
+  $('.dropdown-right > .select-type > .dropdown > .dropdown-menu > li > a').filter(->
+    aVal = @text
+    if aVal == 'Publisher'
+      return true
+    return
+  ).click ->
+    aVal = @text
+    $('.dropdown-right > .select-type > .dropdown > #dropdownMenu5 > .drop-btn-block').text aVal
+    $('.messages-right > .central-message').hide()
+    $('.messages-right > .central-message:has(.publisher)').show()
+    return
+  $('.dropdown-right > .select-type > .dropdown > .dropdown-menu > li > a').filter(->
+    aVal = @text
+    if aVal == 'All'
+      return true
+    return
+  ).click ->
+    aVal = @text
+    $('.dropdown-right > .select-type > .dropdown > #dropdownMenu5 > .drop-btn-block').text aVal
+    $('.messages-right > .central-message').show()
+    return
+  #2
+  $('.dropdown-right > .select-type > .dropdown > .dropdown-menu > li > a').filter(->
+    aVal = @text
+    if aVal == 'Online'
+      return true
+    return
+  ).click ->
+    aVal = @text
+    $('.dropdown-right > .select-type > .dropdown > #dropdownMenu6 > .drop-btn-block').text aVal
+    $('.messages-right > .central-message').hide()
+    $('.messages-right > .online').show()
+    return
+  $('.dropdown-right > .select-type > .dropdown > .dropdown-menu > li > a').filter(->
+    aVal = @text
+    if aVal == 'Offline'
+      return true
+    return
+  ).click ->
+    aVal = @text
+    $('.dropdown-right > .select-type > .dropdown > #dropdownMenu6 > .drop-btn-block').text aVal
+    $('.messages-right > .central-message').hide()
+    $('.messages-right > .offline').show()
+    return
+  $('.dropdown-right > .select-type > .dropdown > .dropdown-menu > li > a').filter(->
+    aVal = @text
+    if aVal == 'Do not Disturb'
+      return true
+    return
+  ).click ->
+    aVal = @text
+    $('.dropdown-right > .select-type > .dropdown > #dropdownMenu6 > .drop-btn-block').text aVal
+    $('.messages-right > .central-message').hide()
+    $('.messages-right > .do-not-disturb').show()
+    return
+  $('.dropdown-right > .select-type > .dropdown > .dropdown-menu > li > a').filter(->
+    aVal = @text
+    if aVal == 'Away'
+      return true
+    return
+  ).click ->
+    aVal = @text
+    $('.dropdown-right > .select-type > .dropdown > #dropdownMenu6 > .drop-btn-block').text aVal
+    $('.messages-right > .central-message').hide()
+    $('.messages-right > .away').show()
+    return
+  #messages search
+  $('.live-search-list-messages > .search-message').each ->
+    $(this).attr 'data-search-term', $(this).text().toLowerCase()
+    return
+  $('.live-search-box-messages').on 'keyup', ->
+    searchTerm = $(this).val().toLowerCase()
+    $('.live-search-list-messages > .search-message').each ->
+      if $(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 or searchTerm.length < 1
+        $(this).show()
+      else
+        $(this).hide()
+      return
+    return
+  #close-message
+  $('.central-message-right > .close-mes').click ->
+    if confirm('Dude, do not hurry! R u serious?')
+      $(this).closest('.central-message').remove()
+    else
+      return false
+    return
+  #read message
+  $('.not-open').click ->
+    $('.not-open > .central-message-right > .fa').removeClass 'fa-envelope'
+    $('.not-open > .central-message-right > .fa').addClass 'fa-envelope-open'
+    $(this).removeClass 'not-open'
+    return
+  return
+
+# ---
+# generated by js2coffee 2.2.0
