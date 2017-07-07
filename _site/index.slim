@@ -1,0 +1,1026 @@
+doctype html
+html[lang="en"]
+  head
+    meta[charset="utf-8"]
+    meta[http-equiv="X-UA-Compatible" content="IE=edge"]
+    meta[name="viewport" content="width=device-width, initial-scale=1"]
+    title
+      | Beanstock
+    link[href="css/bootstrap.min.css" rel="stylesheet"]
+    link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"]
+    link[rel="stylesheet" href="css/font-awesome.min.css"]
+    link[href="css/main.css" rel="stylesheet" type="text/css"]
+    script[src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"]
+    script[src="js/main.js"]
+  body
+    header
+      nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"]
+              span.sr-only
+                | Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand[href="#"]
+              img[alt="Brand" src="img/logo.jpg"]
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul#left-ul.nav.navbar-nav
+              li
+                a[href="#"]
+                  span.glyphicon.glyphicon-search[aria-hidden="true"]
+                  | Discover
+              li
+                a[href="#"]
+                  span.glyphicon.glyphicon-random[aria-hidden="true"]
+                  | Collaborate
+              li
+                a[href="#"]
+                  span.glyphicon.glyphicon-briefcase[aria-hidden="true"]
+                  | Transact
+            .btn-group.navbar-btn.navbar-right
+              button.btn.btn-default[type="button"]
+                | Tracey Geronimo
+              button.btn.btn-default[type="submit"]
+                span.caret
+            ul#right-ul.nav.navbar-nav.navbar-right
+              li
+                a[href="#"]
+                  span.glyphicon.glyphicon-comment.left-span[aria-hidden="true"]
+                  span.al-me-up
+                    | 6 Alerts
+              li
+                a[href="#"]
+                  span.glyphicon.glyphicon-envelope.left-span[aria-hidden="true"]
+                  span.al-me-up
+                    | 5 Messages
+              li
+                a[href="#"]
+                  span.glyphicon.glyphicon-refresh.left-span[aria-hidden="true"]
+                  span#upd.al-me-up
+                    | 3 Updates
+            form.navbar-form.navbar-right
+              .form-group
+                input#search.form-control[type="text" placeholder="Search"]
+    .content
+      .container-fluid
+        .block-left
+          .panel.panel-default
+            .panel-heading[data-toggle="collapse" data-target="#panel-block1"]
+              h3.panel-title
+                span.glyphicon.glyphicon-bullhorn[aria-hidden="true"]
+                | Market Stream
+                span.caret
+            #panel-block1.panel-body.collapse.in
+              .select-type
+                |  Select Update Type 
+                .dropdown
+                  button#dropdownMenu1.btn.dropdown-toggle[type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"]
+                    span#drop-btn-block1
+                      | All
+                    span.caret
+                  ul.dropdown-menu[aria-labelledby="dropdownMenu1"]
+                    li
+                      a[href="#"]
+                        | Action
+                    li.divider[role="separator"]
+                    li
+                      a[href="#"]
+                        | Another action
+                    li.divider[role="separator"]
+                    li
+                      a[href="#"]
+                        | Something else here
+              .messages-block1
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-tag[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Marjan Volsky
+                    |  "anxious to see mockup" 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-question-sign[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Sean Trayce Geronimo
+                    |  When we'll be able to see the mockup? 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-comment[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Sean Trayce Geronimo
+                    |  answered 
+                    a[href="#"]
+                      | Marjan Volsky's question
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-user[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Marjan Volsky
+                    |  changed his 
+                    a[href="#"]
+                      | job details
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-change-name
+                    .message-span
+                      span.glyphicon.glyphicon-briefcase[aria-hidden="true"]
+                      img.small_logo[src="img/small_logo.jpg"]
+                    .message-body
+                      span.message-author
+                        | Deal Name
+                      br
+                      |  was updated 
+                      br
+                      span.message-info
+                        | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-change-name
+                    .message-span
+                      span.glyphicon.glyphicon-folder-close[aria-hidden="true"]
+                      img.small_logo[src="img/small_logo.jpg"]
+                    .message-body
+                      span.message-author
+                        | Package Name
+                      br
+                      |  was updated 
+                      br
+                      span.message-info
+                        | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-question-sign[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Sean Trayce Geronimo
+                    |  When we'll be able to see the mockup? 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-tag[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Marjan Volsky
+                    |  "anxious to see mockup" 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-tag[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Marjan Volsky
+                    |  "anxious to see mockup" 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-question-sign[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Sean Trayce Geronimo
+                    |  When we'll be able to see the mockup? 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-comment[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Sean Trayce Geronimo
+                    |  answered 
+                    a[href="#"]
+                      | Marjan Volsky's question
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-user[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Marjan Volsky
+                    |  changed his 
+                    a[href="#"]
+                      | job details
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-change-name
+                    .message-span
+                      span.glyphicon.glyphicon-briefcase[aria-hidden="true"]
+                      img.small_logo[src="img/small_logo.jpg"]
+                    .message-body
+                      span.message-author
+                        | Deal Name
+                      br
+                      |  was updated 
+                      br
+                      span.message-info
+                        | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-change-name
+                    .message-span
+                      span.glyphicon.glyphicon-folder-close[aria-hidden="true"]
+                      img.small_logo[src="img/small_logo.jpg"]
+                    .message-body
+                      span.message-author
+                        | Package Name
+                      br
+                      |  was updated 
+                      br
+                      span.message-info
+                        | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-question-sign[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Sean Trayce Geronimo
+                    |  When we'll be able to see the mockup? 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-tag[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Marjan Volsky
+                    |  "anxious to see mockup" 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-tag[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Marjan Volsky
+                    |  "anxious to see mockup" 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-question-sign[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Sean Trayce Geronimo
+                    |  When we'll be able to see the mockup? 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-comment[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Sean Trayce Geronimo
+                    |  answered 
+                    a[href="#"]
+                      | Marjan Volsky's question
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-user[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Marjan Volsky
+                    |  changed his 
+                    a[href="#"]
+                      | job details
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-change-name
+                    .message-span
+                      span.glyphicon.glyphicon-briefcase[aria-hidden="true"]
+                      img.small_logo[src="img/small_logo.jpg"]
+                    .message-body
+                      span.message-author
+                        | Deal Name
+                      br
+                      |  was updated 
+                      br
+                      span.message-info
+                        | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-change-name
+                    .message-span
+                      span.glyphicon.glyphicon-folder-close[aria-hidden="true"]
+                      img.small_logo[src="img/small_logo.jpg"]
+                    .message-body
+                      span.message-author
+                        | Package Name
+                      br
+                      |  was updated 
+                      br
+                      span.message-info
+                        | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-question-sign[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Sean Trayce Geronimo
+                    |  When we'll be able to see the mockup? 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+                .message
+                  .message-span
+                    span.glyphicon.glyphicon-tag[aria-hidden="true"]
+                  .message-body
+                    span.message-author
+                      a[href="#"]
+                        | Marjan Volsky
+                    |  "anxious to see mockup" 
+                    br
+                    span.message-info
+                      | 27 minutes ago via iPhone
+                  span.close-mes
+                    img[src="img/close.png" alt="close"]
+        .block-mid
+          .mid-header
+            .mid-title
+              span
+                img[src="img/comments.jpg"]
+              |  Messages 
+            .mid-header-body
+              .btn-group
+                button.btn.btn-default.dropdown-toggle[type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"]
+                  span.span-left
+                    | Frop New to Old
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a[href="#"]
+                      | Action
+                  li.divider[role="separator"]
+                  li
+                    a[href="#"]
+                      | Another action
+                  li.divider[role="separator"]
+                  li
+                    a[href="#"]
+                      | Something else here
+              .btn-group
+                button.btn.btn-default.dropdown-toggle[type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"]
+                  span.span-left
+                    | All
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a[href="#"]
+                      | Seller
+                  li.divider[role="separator"]
+                  li
+                    a[href="#"]
+                      | Publisher
+                  li.divider[role="separator"]
+                  li
+                    a[href="#"]
+                      | Buyer
+              .input-group
+                span.input-group-addon
+                  img[src="img/search.jpg"]
+                input.form-control.live-search-box-messages[type="text" placeholder="search message" aria-label="Amount (to the nearest dollar)"]
+              button#send-message.btn.btn-default[type="button"]
+                | Send a New Message
+              .clear
+          .central-block-messages.live-search-list-messages
+            .central-message.search-message
+              .photo-div
+                .photo
+                  a[href="#"]
+                    img[src="img/profile1.jpg"]
+              .central-message-body
+                span.central-message-author
+                  a[href="#"]
+                    | Sean Tracey Geronimo
+                br
+                span.subject
+                  | Subject: 
+                span.central-message-subject
+                  | Mockup Message Dropdown
+                br
+                span.central-message-content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...
+              .central-message-right
+                span.close-mes
+                  a[href="#"]
+                    img[src="img/close.png" alt="close"]
+                br
+                span.fa.fa-envelope-open[aria-hidden="true"]
+                br
+                span.central-message-data
+                  | June 22, 2012
+                .clear
+              .clear
+            .central-message.search-message
+              .photo-div
+                .photo
+                  a[href="#"]
+                    img[src="img/profile2.jpg"]
+              .central-message-body
+                span.central-message-author
+                  a[href="#"]
+                    | Sean Tracey Geronimo
+                br
+                span.subject
+                  | Subject: 
+                span.central-message-subject
+                  | Mockup Message Dropdown
+                br
+                span.central-message-content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...
+              .central-message-right
+                span.close-mes
+                  a[href="#"]
+                    img[src="img/close.png" alt="close"]
+                br
+                span.fa.fa-envelope-open[aria-hidden="true"]
+                br
+                span.central-message-data
+                  | June 14, 2012
+                .clear
+              .clear
+            .central-message.not-open.search-message
+              .photo-div
+                .photo
+                  a[href="#"]
+                    img[src="img/profile3.jpg"]
+              .central-message-body
+                span.central-message-author
+                  a[href="#"]
+                    | Sean Tracey Geronimo
+                br
+                span.subject
+                  | Subject: 
+                span.central-message-subject
+                  | Mockup Message Dropdown
+                br
+                span.central-message-content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...
+              .central-message-right
+                span.close-mes
+                  a[href="#"]
+                    img[src="img/close.png" alt="close"]
+                br
+                span.fa.fa-envelope[aria-hidden="true"]
+                br
+                span.central-message-data
+                  | May 10, 2012
+                .clear
+              .clear
+            .central-message.not-open.search-message
+              .photo-div
+                .photo
+                  a[href="#"]
+                    img[src="img/profile1.jpg"]
+              .central-message-body
+                span.central-message-author
+                  a[href="#"]
+                    | Sean Tracey Geronimo
+                span.publisher
+                  a[href="#"]
+                    | Publisher
+                br
+                span.subject
+                  | Subject: 
+                span.central-message-subject
+                  | Mockup Message Dropdown
+                br
+                span.central-message-content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...
+              .central-message-right
+                span.close-mes
+                  a[href="#"]
+                    img[src="img/close.png" alt="close"]
+                br
+                span.fa.fa-envelope[aria-hidden="true"]
+                br
+                span.central-message-data
+                  | May 10, 2012
+                .clear
+              .clear
+            .central-message.search-message
+              .photo-div
+                .photo
+                  a[href="#"]
+                    img[src="img/profile2.jpg"]
+              .central-message-body
+                span.central-message-author
+                  a[href="#"]
+                    | Sean Tracey Geronimo
+                span.seller
+                  a[href="#"]
+                    | Seller
+                br
+                span.subject
+                  | Subject: 
+                span.central-message-subject
+                  | Mockup Message Dropdown
+                br
+                span.central-message-content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...
+              .central-message-right
+                span.close-mes
+                  a[href="#"]
+                    img[src="img/close.png" alt="close"]
+                br
+                span.fa.fa-envelope-open[aria-hidden="true"]
+                br
+                span.central-message-data
+                  | May 10, 2012
+                .clear
+              .clear
+            .central-message.search-message
+              .photo-div
+                .photo
+                  a[href="#"]
+                    img[src="img/profile1.jpg"]
+              .central-message-body
+                span.central-message-author
+                  a[href="#"]
+                    | Sean Tracey Geronimo
+                span.buyer
+                  a[href="#"]
+                    | Buyer
+                br
+                span.subject
+                  | Subject: 
+                span.central-message-subject
+                  | Mockup Message Dropdown
+                br
+                span.central-message-content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...
+              .central-message-right
+                span.close-mes
+                  a[href="#"]
+                    img[src="img/close.png" alt="close"]
+                br
+                span.fa.fa-envelope-open[aria-hidden="true"]
+                br
+                span.central-message-data
+                  | March 19, 2012
+                .clear
+              .clear
+            .central-message.search-message
+              .photo-div
+                .photo
+                  a[href="#"]
+                    img[src="img/profile2.jpg"]
+              .central-message-body
+                span.central-message-author
+                  a[href="#"]
+                    | Sean Tracey Geronimo
+                br
+                span.subject
+                  | Subject: 
+                span.central-message-subject
+                  | Mockup Message Dropdown
+                br
+                span.central-message-content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...
+              .central-message-right
+                span.close-mes
+                  a[href="#"]
+                    img[src="img/close.png" alt="close"]
+                br
+                span.fa.fa-envelope-open[aria-hidden="true"]
+                br
+                span.central-message-data
+                  | November 19, 2011
+                .clear
+              .clear
+            .central-message.search-message
+              .photo-div
+                .photo
+                  a[href="#"]
+                    img[src="img/profile3.jpg"]
+              .central-message-body
+                span.central-message-author
+                  a[href="#"]
+                    | Sean Tracey Geronimo
+                br
+                span.subject
+                  | Subject: 
+                span.central-message-subject
+                  | Mockup Message Dropdown
+                br
+                span.central-message-content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...
+              .central-message-right
+                span.close-mes
+                  a[href="#"]
+                    img[src="img/close.png" alt="close"]
+                br
+                span.fa.fa-envelope-open[aria-hidden="true"]
+                br
+                span.central-message-data
+                  | November 19, 2011
+                .clear
+              .clear
+            .central-message.search-message
+              .photo-div
+                .photo
+                  a[href="#"]
+                    img[src="img/profile1.jpg"]
+              .central-message-body
+                span.central-message-author
+                  a[href="#"]
+                    | Sean Tracey Geronimo
+                br
+                span.subject
+                  | Subject: 
+                span.central-message-subject
+                  | Mockup Message Dropdown
+                br
+                span.central-message-content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...
+              .central-message-right
+                span.close-mes
+                  a[href="#"]
+                    img[src="img/close.png" alt="close"]
+                br
+                span.fa.fa-envelope-open[aria-hidden="true"]
+                br
+                span.central-message-data
+                  | November 19, 2011
+                .clear
+              .clear
+            .central-message.search-message
+              .photo-div
+                .photo
+                  a[href="#"]
+                    img[src="img/profile1.jpg"]
+              .central-message-body
+                span.central-message-author
+                  a[href="#"]
+                    | Sean Tracey Geronimo
+                br
+                span.subject
+                  | Subject: 
+                span.central-message-subject
+                  | Mockup Message Dropdown
+                br
+                span.central-message-content
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...
+              .central-message-right
+                span.close-mes
+                  a[href="#"]
+                    img[src="img/close.png" alt="close"]
+                br
+                span.fa.fa-envelope-open[aria-hidden="true"]
+                br
+                span.central-message-data
+                  | November 19, 2011
+                .clear
+              .clear
+        .block-right
+          .panel.panel-default
+            .panel-heading[data-toggle="collapse" data-target="#panel-block3"]
+              h3.panel-title
+                span.fa.fa-users[aria-hidden="true"]
+                | My Marketplace
+                span.caret
+            #panel-block3.panel-body.collapse.in
+              .form-right
+                .input-group
+                  span.input-group-addon
+                    img[src="img/search.jpg"]
+                  input.form-control.live-search-box[type="text" placeholder="type your search here" aria-label="Amount (to the nearest dollar)"]
+              .dropdown-right
+                .select-type
+                  |  Sort By Type 
+                  .dropdown
+                    button#dropdownMenu5.btn.dropdown-toggle.btn-block-right[type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"]
+                      span.drop-btn-block
+                        | All
+                      span.caret
+                    ul.dropdown-menu[aria-labelledby="dropdownMenu5"]
+                      li
+                        a[href="#"]
+                          | Buyer
+                      li.divider[role="separator"]
+                      li
+                        a[href="#"]
+                          | Seller
+                      li.divider[role="separator"]
+                      li
+                        a[href="#"]
+                          | Publisher
+                      li.divider[role="separator"]
+                      li
+                        a[href="#"]
+                          | All
+                .select-type
+                  |  Sort By Status 
+                  .dropdown
+                    button#dropdownMenu6.btn.dropdown-toggle.btn-block-right[type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"]
+                      span.drop-btn-block
+                        | Online
+                      span.caret
+                    ul.dropdown-menu[aria-labelledby="dropdownMenu6"]
+                      li
+                        a[href="#"]
+                          | Offline
+                      li.divider[role="separator"]
+                      li
+                        a[href="#"]
+                          | Away
+                      li.divider[role="separator"]
+                      li
+                        a[href="#"]
+                          | Do not Disturb
+                      li.divider[role="separator"]
+                      li
+                        a[href="#"]
+                          | Online
+                .select-type
+                  |  Sort By Name 
+                  .dropdown
+                    button#dropdownMenu7.btn.dropdown-toggle.btn-block-right[type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"]
+                      span.drop-btn-block
+                        | First Name
+                      span.caret
+                    ul.dropdown-menu[aria-labelledby="dropdownMenu7"]
+                      li
+                        a[href="#"]
+                          | Second Name
+                      li.divider[role="separator"]
+                      li
+                        a[href="#"]
+                          | Seller
+                      li.divider[role="separator"]
+                      li
+                        a[href="#"]
+                          | First Name
+                .clear
+              .messages-right.live-search-list
+                .central-message.search-item.online
+                  .photo-div
+                    .photo
+                      a[href="#"]
+                        img[src="img/profile1.jpg"]
+                      span.photo-status
+                        img[src="img/ok.jpg" alt=""]
+                  .central-message-body
+                    span.central-message-author
+                      a[href="#"]
+                        | ADoe John
+                    br
+                    span.central-message-subject
+                      | Last seen 7 hours ago
+                    br
+                    span.central-message-content
+                      span.glyphicon.glyphicon-user[aria-hidden="true"]
+                      | Added 
+                      a.bold-right[href="#"]
+                        | Sean Smith
+                      |  and 
+                      a[href="#"]
+                        | 2 others
+                  .central-message-right
+                    span.fa.fa-envelope[aria-hidden="true"]
+                    .clear
+                  .clear
+                .central-message.new-mes.search-item.away
+                  .photo-div
+                    .photo
+                      a[href="#"]
+                        img[src="img/profile2.jpg"]
+                      span.photo-status
+                        img[src="img/time.jpg" alt=""]
+                  .central-message-body
+                    span.central-message-author
+                      a[href="#"]
+                        | BDoe John
+                    br
+                    span.central-message-subject
+                      | Last seen 2 hours ago
+                    br
+                    span.central-message-content
+                      span.glyphicon.glyphicon-user[aria-hidden="true"]
+                      | Added 
+                      a.bold-right[href="#"]
+                        | Sean Smith
+                      |  and 
+                      a[href="#"]
+                        | 7 others
+                  .central-message-right
+                    span.fa.fa-envelope[aria-hidden="true"]
+                    span.badge
+                      a[href="#"]
+                        | 2
+                    .clear
+                  .clear
+                .central-message.search-item.do-not-disturb
+                  .photo-div
+                    .photo
+                      a[href="#"]
+                        img[src="img/profile3.jpg"]
+                      span.photo-status
+                        img[src="img/x.jpg" alt=""]
+                  .central-message-body
+                    span.central-message-author
+                      a[href="#"]
+                        | CDoe John
+                    br
+                    span.central-message-subject
+                      | Last seen 1 hours ago
+                    br
+                    span.central-message-content
+                      span.glyphicon.glyphicon-user[aria-hidden="true"]
+                      | Added 
+                      a.bold-right[href="#"]
+                        | Sean Smith
+                      |  and 
+                      a[href="#"]
+                        | 4 others
+                  .central-message-right
+                    span.fa.fa-envelope[aria-hidden="true"]
+                    .clear
+                  .clear
+                .central-message.search-item.online
+                  .photo-div
+                    .photo
+                      a[href="#"]
+                        img[src="img/profile1.jpg"]
+                      span.photo-status
+                        img[src="img/ok.jpg" alt=""]
+                  .central-message-body
+                    span.central-message-author
+                      a[href="#"]
+                        | DDoe John
+                    span.publisher
+                      a[href="#"]
+                        | Publisher
+                    br
+                    span.central-message-subject
+                      | Last seen 5 hours ago
+                    br
+                    span.central-message-content
+                      span.glyphicon.glyphicon-user[aria-hidden="true"]
+                      | Added 
+                      a.bold-right[href="#"]
+                        | Sean Smith
+                      |  and 
+                      a[href="#"]
+                        | 14 others
+                  .central-message-right
+                    span.fa.fa-envelope[aria-hidden="true"]
+                    .clear
+                  .clear
+                .central-message.search-item.away
+                  .photo-div
+                    .photo
+                      a[href="#"]
+                        img[src="img/profile2.jpg"]
+                      span.photo-status
+                        img[src="img/time.jpg" alt=""]
+                  .central-message-body
+                    span.central-message-author
+                      a[href="#"]
+                        | EDoe John
+                    span.seller
+                      a[href="#"]
+                        | Seller
+                    br
+                    span.central-message-subject
+                      | Last seen June 23
+                    br
+                    span.central-message-content
+                      span.glyphicon.glyphicon-user[aria-hidden="true"]
+                      | Added 
+                      a.bold-right[href="#"]
+                        | Sean Smith
+                      |  and 
+                      a[href="#"]
+                        | 7 others
+                  .central-message-right
+                    span.fa.fa-envelope[aria-hidden="true"]
+                    .clear
+                  .clear
+                .central-message.search-item.offline
+                  .photo-div
+                    .photo
+                      a[href="#"]
+                        img[src="img/profile3.jpg"]
+                      span.photo-status
+                        img[src="img/offline.jpg" alt=""]
+                  .central-message-body
+                    span.central-message-author
+                      a[href="#"]
+                        | FDoe John
+                    span.buyer
+                      a[href="#"]
+                        | Buyer
+                    br
+                    span.central-message-subject
+                      | Last seen Jul 3th
+                    br
+                    span.central-message-content
+                      span.glyphicon.glyphicon-user[aria-hidden="true"]
+                      | Added 
+                      a.bold-right[href="#"]
+                        | Sean Smith
+                      |  and 
+                      a[href="#"]
+                        | 5 others
+                  .central-message-right
+                    span.fa.fa-envelope[aria-hidden="true"]
+                    .clear
+                  .clear
+      .clear
+    script[src="js/bootstrap.min.js"]
